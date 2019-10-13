@@ -1,10 +1,23 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Image
+        source={require('./assets/caution.png')}
+      />
+      <Text>Dangerous laser button!!!!</Text>
+      <Image
+        style={{width: 200, height: 200}}
+        source={require('./assets/laser-button.png')}
+      />
+      <Text>Dangerous laser button!!!!</Text>
+      <Image
+        ImageResizeMode="center"
+        // style={{width: "80%"}}
+        source={require('./assets/caution.png')}
+      />
     </View>
   );
 }
